@@ -13,6 +13,17 @@ CREATE TABLE IF NOT EXISTS reviews (
   decision TEXT NOT NULL, note TEXT NOT NULL, changed TEXT NOT NULL,
   PRIMARY KEY(run_id,version)
 );
+CREATE TABLE IF NOT EXISTS comparisons (
+  id TEXT PRIMARY KEY,
+  base_run_id TEXT NOT NULL REFERENCES runs(id),
+  target_run_id TEXT NOT NULL REFERENCES runs(id),
+  report TEXT NOT NULL, created TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS comparison_notes (
+  comparison_id TEXT NOT NULL REFERENCES comparisons(id),
+  parcel_key TEXT NOT NULL, note TEXT NOT NULL, changed TEXT NOT NULL,
+  PRIMARY KEY(comparison_id,parcel_key)
+);
 """
 
 

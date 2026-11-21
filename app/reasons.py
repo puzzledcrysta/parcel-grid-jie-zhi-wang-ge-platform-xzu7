@@ -12,3 +12,5 @@ REASONS = {
 }
 
 REASONS.update({'GRID_LIMIT': '权证矩形数量超限', 'GRID_FORMAT': '权证矩形无效', 'GRID_SPAN': '权证边界无正面积', 'DATE': '日期格式无效', 'REV_BLOCKED': '较新来源尚未采信'})
+REASONS.update({'COMPARE_SAME': '对账需要两个不同批次', 'COMPARE_UNKNOWN': '没有此对账批次',
+                'REVIEW_UNEXPLAINED': '存在解释不清的地块，不能确认新批'})

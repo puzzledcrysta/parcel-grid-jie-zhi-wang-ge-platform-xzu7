@@ -27,6 +27,18 @@
 <li class="kpi"><small>隔离</small><strong data-count="rejected">—</strong><span>条</span></li>
 <li class="kpi"><small>来源记录</small><strong data-count="input">—</strong><span>条</span></li>
         </ul>
+        <section class="panel compare" id="compare-panel" hidden aria-labelledby="compare-title">
+          <div class="panel__head"><h2 id="compare-title">批次并排对账</h2><span class="num" id="compare-meta"></span></div>
+          <div class="panel__body">
+            <form id="compare-form" class="actions">
+              <label>旧批次 <select id="compare-base"></select></label>
+              <label>新批次 <select id="compare-target"></select></label>
+              <button type="submit" class="btn btn--primary" id="compare-go">并排对账</button>
+            </form>
+            <div class="compare-history" id="compare-history" aria-label="历史对账批次"></div>
+            <p class="empty">同一对批次重复对账不会新增核对批次；解释不清的地块可在下方逐笔补注，未补注前新批不能确认。</p>
+          </div>
+        </section>
         <div class="grid">
     <section class="panel source" aria-labelledby="input-title">
       <div class="panel__head"><h2 id="input-title">权属数据</h2><small>CSV</small></div>
