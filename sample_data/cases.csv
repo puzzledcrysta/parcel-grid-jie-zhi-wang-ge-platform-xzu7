@@ -1,0 +1,10 @@
+case,expected,evidence,权属矩形,目标业主
+shared_and_covered,50,同级争议=35,甲:2:0:0:10:10;乙:2:5:0:15:10;丙:3:5:0:8:5,甲
+same_owner_union,13,覆盖并集=13,甲:1:0:0:3:3;甲:1:1:0:5:2,甲
+exact_touch,4,同级争议=0,东:4:0:0:2:2;西:4:2:0:4:2,西
+negative_coordinates,6.25,,地铁:3:-2.5:-2.5:0:0,地铁
+concentric,16,甲 可确认=16,甲:2:0:0:4:5;乙:5:1:1:3:3,甲
+contested_all,0,同级争议=20,甲:1:0:0:4:5;乙:1:0:0:4:5,甲
+zero_rectangle,!GRID_SPAN,,甲:1:1:0:1:4,甲
+backward_bounds,!GRID_SPAN,,甲:1:4:0:3:4,甲
+bad_rank,!RANGE,,甲:0:0:0:3:4,甲
